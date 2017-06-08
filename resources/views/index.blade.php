@@ -10,7 +10,7 @@
     </div>
     <div class="entry-body">
         <p></p>
-        <p>Situs ini akan membantu Anda mengidentifikasi jamur yang Anda temukan, dengan menjawab beberapa pertanyaan di bawah ini</p>
+        <p>Situs ini akan membantu Anda mengidentifikasi jamur yang Anda temukan, dengan menjawab beberapa pertanyaan mulai dari 1 s/d 4 dibawah ini</p>
     </div>
     <div class="mulai">
         <a class="btn btn-success" href="{{ url('pertanyaan1') }}">Mulai</a>

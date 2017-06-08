@@ -44,9 +44,9 @@
                                 </label>
                             </div>
                             <div class="radio">
-                                <input type="radio" name="radio1" id="radio5" value="None">
+                                <input type="radio" name="radio1" id="radio5" value="Musty">
                                 <label for="radio5">
-                                    None
+                                    Musty
                                 </label>
                             </div>
                             <div class="radio">
@@ -70,9 +70,9 @@
                                 </label>
                             </div>
                             <div class="radio">
-                                <input type="radio" name="radio1" id="radio9" value="Musty">
+                                <input type="radio" name="radio1" id="radio9" value="None">
                                 <label for="radio9">
-                                    Musty
+                                    Tidak berbau
                                 </label>
                             </div>
                         </div>

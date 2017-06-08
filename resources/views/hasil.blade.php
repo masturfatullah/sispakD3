@@ -5,7 +5,6 @@
     <div class="page-header">
         <h1>Hasil</h1>
     </div>
-{{session('jawabanP1')}}{{session('jawabanP2')}}{{session('jawabanP3')}}{{session('jawabanP4')}}
 <div class="panel panel-default">
     <div class="panel-heading">        
         <h3 class="panel-title">Riwayat Pertanyaan</h3>
@@ -77,7 +76,7 @@
 				@endif
         @endif
         @if(session('jawabanP1') != "" and session('jawabanP2') != "" and session('jawabanP2') == "Fibrous" and session('jawabanP3') == "" and session('jawabanP4') == "" and session('jawabanP1') == "None")
-                @if(session('jawabanP1') == "None" and session('jawabanP2')  == "fibrous") 
+                @if(session('jawabanP1') == "None" and session('jawabanP2')  == "Fibrous") 
                     <td>Tidak</td>
                     <td>Dapat dimakan, karena tidak memiliki aroma yang khas serta permukaan tangkai berserabut.</td>
 				@endif
@@ -97,10 +96,14 @@
 				@endif
         @endif
         @if((session('jawabanP1') != "" and session('jawabanP2') != ""  and session('jawabanP3') != "" and session('jawabanP4') != "") and (session('jawabanP1') == "None" and session('jawabanP2') == "Smooth"  and session('jawabanP3') == "White"))
-                @if(session('jawabanP1') == "None" and session('jawabanP2')  == "Smooth" and session('jawabanP3') == "White" and ((session('jawabanP4') == "Close" or session('jawabanP4') == "Crowded")))
-                    <td>Ya</td>
-                    <td></td>
-				@endif    
+                @if(session('jawabanP1') == "None" and session('jawabanP2')  == "Smooth" and session('jawabanP3') == "White" and session('jawabanP4') == "Close")
+                    <td>Tidak</td>
+                    <td>Dapat dimakan, karena tidak memiliki aroma yang khas, permukaan tangkai yang licin, tudung yang berwarna putih dan jarak antar jamur yang berdekatan.</td>
+                @endif    
+                @if(session('jawabanP1') == "None" and session('jawabanP2')  == "Smooth" and session('jawabanP3') == "White" and session('jawabanP4') == "Crowded")
+                    <td>Tidak</td>
+                    <td>Dapat dimakan, Karena tidak memiliki aroma yang khas, permukaan tangkai yang licin, tudung yang berwarna putih dan jarak antar jamur yang crowded.</td>
+				@endif
         @endif
         @if((session('jawabanP1') != "" and session('jawabanP2') != ""  and session('jawabanP4') != "" and session('jawabanP3') == "") and (session('jawabanP1') == "None" and (session('jawabanP2') == "Silky" or session('jawabanP2') == "Scaly")))
                 @if(session('jawabanP1') == "None" and session('jawabanP2')  == "Silky" and session('jawabanP4') == "Close")
