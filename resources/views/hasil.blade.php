@@ -38,58 +38,58 @@
     <div class="panel-body">
         <table class="table table-bordered">
             <tr>
-                <td>Bisa di makan?</td>
+                <td>Beracun</td>
                 <td>Keterangan</td>
             </tr>
             <tr>
         @if((session('jawabanP1') != "") and session('jawabanP1') != "None" and session('jawabanP2') == "" and session('jawabanP3') == "" and session('jawabanP4') == "")   
                 @if(session('jawabanP1') == "Pugent")
-                    <td>Ya</td>
-                    <td></td>
+                    <td>Tidak</td>
+                    <td>Dapat dimakan, karena memiliki bau Pugent yang dimiliki oleh jamur jamur yang tidak beracun.</td>
 				@endif
 				@if(session('jawabanP1') == "Almond")
-                    <td>Ya</td>
-                    <td></td>
+                    <td>Tidak</td>
+                    <td>Dapat dimakan,karena memiliki bau Almond yang dimiliki oleh jamur jamur yang tidak beracun.</td>
 				@endif
 				@if(session('jawabanP1') == "Anise" )
-                    <td>Ya</td>
-                    <td></td>
+                    <td>Tidak</td>
+                    <td>Dapat dimakan,karena memiliki bau Anise yang dimiliki oleh jamur jamur yang tidak beracun.</td>
 				@endif
 				@if(session('jawabanP1') == "Foul") 
-                    <td>Tidak</td>
-                    <td>Beracun</td>
+                    <td>Ya</td>
+                    <td>Beracun, karena memiliki aroma busuk yang dimiliki oleh jamur beracun.</td>
 				@endif
 				@if(session('jawabanP1') == "Fishy")
-                    <td>Tidak</td>
-                    <td>Beracun</td>
+                    <td>Ya</td>
+                    <td>Beracun, karena memiliki aroma amis yang dimiliki oleh jamur beracun.</td>
 				@endif
 				@if(session('jawabanP1') == "Musty")
-                    <td>Tidak</td>
-                    <td>Beracun</td>
+                    <td>Ya</td>
+                    <td>Beracun, karena memiliki aroma apak yang dimiliki oleh jamur beracun.</td>
 				@endif
 				@if(session('jawabanP1') == "Spicy")
-                    <td>Tidak</td>
-                    <td>Beracun</td>
+                    <td>Ya</td>
+                    <td>Beracun, karena memiliki aroma pedas yang dimiliki oleh jamur beracun.</td>
 				@endif
 				@if(session('jawabanP1') == "Creosote")
-                    <td>Tidak</td>
-                    <td>Beracun</td>
+                    <td>Ya</td>
+                    <td>Beracun, karena memiliki aroma creosote yang dimiliki oleh jamur beracun.</td>
 				@endif
         @endif
         @if(session('jawabanP1') != "" and session('jawabanP2') != "" and session('jawabanP2') == "Fibrous" and session('jawabanP3') == "" and session('jawabanP4') == "" and session('jawabanP1') == "None")
                 @if(session('jawabanP1') == "None" and session('jawabanP2')  == "fibrous") 
-                    <td>Ya</td>
-                    <td></td>
+                    <td>Tidak</td>
+                    <td>Dapat dimakan, karena tidak memiliki aroma yang khas serta permukaan tangkai berserabut.</td>
 				@endif
         @endif
         @if(session('jawabanP1') != "" and session('jawabanP2') != ""  and session('jawabanP3') != "" and session('jawabanP2') == "Smooth" and session('jawabanP4') == "" and session('jawabanP1') == "None")
                 @if(session('jawabanP1') == "None" and session('jawabanP2')  == "Smooth" and session('jawabanP3') == "Brown")
-                    <td>Ya</td>
-                    <td></td>
+                    <td>Tidak</td>
+                    <td>Dapat dimakan, karena tidak memiliki aroma yang khas serta permukaan tangkai yang licin dan warna dari tudung.</td>
 				@endif
 				@if(session('jawabanP1') == "None" and session('jawabanP2')  == "Smooth" and session('jawabanP3') == "Orange")
-                    <td>Ya</td>
-                    <td></td>
+                    <td>Tidak</td>
+                    <td>Dapat dimakan, karena tidak memiliki aroma yang khas serta permukaan tangkai yang licin dan warna dari tudung.</td>
 				@endif
 				@if(session('jawabanP1') == "None" and session('jawabanP2')  == "Smooth" and session('jawabanP3') == "Yellow")
                     <td>Tidak dekatahu</td>
@@ -104,20 +104,20 @@
         @endif
         @if((session('jawabanP1') != "" and session('jawabanP2') != ""  and session('jawabanP4') != "" and session('jawabanP3') == "") and (session('jawabanP1') == "None" and (session('jawabanP2') == "Silky" or session('jawabanP2') == "Scaly")))
                 @if(session('jawabanP1') == "None" and session('jawabanP2')  == "Silky" and session('jawabanP4') == "Close")
-                    <td>Tidak</td>
-                    <td>Beracun</td>
+                    <td>Ya</td>
+                    <td>Beracun, karena tidak memiliki aroma yang khas serta permukaan tangkai yang halus dan jarak antar jamur yang berdekatan.</td>
 				@endif
 				@if(session('jawabanP1') == "None" and session('jawabanP2')  == "Silky" and session('jawabanP4') == "Crowded")
-                    <td>Ya</td>
-                    <td></td>
+                    <td>Tidak</td>
+                    <td>Dapat dimakan, karena tidak memiliki aroma yang khas serta permukaan tangkai yang halus dan jarak antar jamur yang crowded.</td>
 				@endif
 				@if(session('jawabanP1') == "None" and session('jawabanP2')  == "Scaly" and session('jawabanP4') == "Crowded")
-                    <td>Tidak</td>
-                    <td>Beracun</td>
+                    <td>Ya</td>
+                    <td>Beracun, karena tidak memiliki aroma yang khas serta permukaan tangkai yang bersisik dan jarak antar jamur yang crowded.</td>
 				@endif
 				@if(session('jawabanP1') == "None" and session('jawabanP2')  == "Scaly" and session('jawabanP4') == "Close") 
-                    <td>Ya</td>
-                    <td></td>
+                    <td>Tidak</td>
+                    <td>Dapat dimakan, karena tidak memiliki aroma yang khas serta permukaan tangkai yang bersisik dan jarak antar jamur yang berdekatan.</td>
 				@endif
         @endif
             </tr>
